@@ -1,0 +1,52 @@
+#配置文件
+#/etc/profile
+
+#refresh env
+alias renv='source /etc/profile'
+alias venv="code /etc/profile"
+
+#enables color in the terminal bash shell export
+export CLICOLOR=1
+#setsup thecolor scheme for list export
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
+#HISTFILESIZE 定义了在 .bash_history 中保存命令的记录总数，可以理解为.bash_history文件中最多只有HISTFILESIZE行
+#HISTSIZE 定义了 history 命令输出的记录数，即输出.bash_history文件中的最后HISTSIZE行
+export HISTFILESIZE=10000
+export HISTSIZE=500
+export HISTIGNORE="&:[bf]g:exit"
+
+#命令行头
+PS1='\[\033[1;30m\]\u:\[\033[01;34m\]\w\[\033[00m\]\[\033[1;30m\]\$\[\033[00m\] '
+
+#定义变量
+#export some_path=/Users/some/path
+#export LI=$some_path/in.txt
+
+#向path添加环境变量
+export PATH=$PATH:/home/$whoami/cfg/cmd
+export PATH=$PATH:.
+export JAVA_HOME=/home/$whoami/Documents/install/jdk-15.0.1
+export PATH=$PATH:$JAVA_HOME/bin
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....='cd ../../..'
+alias cdr="cd -"
+
+#ls
+alias ll='ls -aoF'
+alias la='ls -ACF'
+alias l='ls -CF'
+
+#ps
+alias pscpu='ps aux|head -1;ps aux|grep -v PID|sort -rn -k3|head -29'
+alias psmem='ps aux|head -1;ps aux|grep -v PID|sort -rn -k4|head -29'
+
+#git
+alias gitck='git checkout '
+alias gitbr='git branch '
+alias gs='git status'
+alias gg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(dim white)%aD%C(reset) %C(dim white)(%ar) %C(dim white)- %an%C(reset) %C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset)' --all"
+alias ggc="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(dim white)%aD%C(reset) %C(dim white)(%ar) %C(dim white)- %an%C(reset) %C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset)' --all -c"
+alias ggs="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(dim white)%aD%C(reset) %C(dim white)(%ar) %C(dim white)- %an%C(reset) %C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset)' --all --stat"

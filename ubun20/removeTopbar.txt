@@ -1,0 +1,10 @@
+https://extensions.gnome.org/extension/3843/just-perfection/
+
+Don’t see the toggle icon? Click the link which says 
+“Click here to install browser extension” to install browser extension and refresh the web page.
+
+sudo apt install gnome-tweaks
+
+sudo apt install chrome-gnome-shell
+
+https://ubuntuhandbook.org/index.php/2020/12/remove-top-bar-dock-ui-elements-ubuntu-20-04/

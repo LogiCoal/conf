@@ -1,0 +1,7 @@
+for file in ${PWD}/*
+do
+    if [ -d "$file" ]
+    then
+        echo "$file"
+    fi
+done

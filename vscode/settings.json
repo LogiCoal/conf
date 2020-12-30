@@ -1,0 +1,192 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+    //标题栏显示路径
+    // "window.title": "${dirty}${activeEditorShort}${separator}${activeEditorLong}",
+    "window.title": "${dirty}${activeEditorLong}",
+
+    "editor.fontSize": 13,
+
+    //放缩打开文本
+    "editor.mouseWheelZoom": true,
+    "editor.smoothScrolling": true,
+    "editor.mouseWheelScrollSensitivity": 1,
+
+    //放缩整个窗口,
+    "window.zoomLevel": 1,
+
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": true,
+
+    // 控制换行方式。可以选择:
+    //  - "off" (禁用换行)，
+    //  - "on" (视区换行)，
+    //  - "wordWrapColumn" (在 "editor.wordWrapColumn" 处换行)或
+    //  - "bounded" (在最小视区和 "editor.wordWrapColumn" 处换行)。
+    "editor.wordWrap": "off",
+
+    // 在 "editor.wordWrap" 为 "wordWrapColumn" 或 "bounded" 时控制编辑器列的换行。
+    //"editor.wordWrapColumn": 180,
+
+    // 控制边栏的位置。它可显示在工作台的左侧或右侧。
+    "workbench.sideBar.location": "left",
+
+    "window.openFilesInNewWindow": "on",
+
+    // 读取和编写文件时将使用的默认字符集编码。
+    "files.encoding": "utf8",
+
+    // 默认行尾字符。
+    "files.eol": "\n",
+    
+    "editor.fontFamily": "Sarasa Mono SC",
+    "files.autoGuessEncoding": false,
+
+    //"workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "vscode-icons",
+
+    "workbench.colorCustomizations": {
+      "editorCursor.foreground": "#7fff00",
+    },
+
+    //空白符号处理
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": true,
+    "editor.renderIndentGuides": true,
+    "editor.detectIndentation": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": false,
+    "editor.multiCursorModifier": "alt",
+    "workbench.editor.showTabs": true,
+
+    "files.trimFinalNewlines": false,
+    "files.trimTrailingWhitespace": false,
+
+    //bookmarks
+    "bookmarks.navigateThroughAllFiles": true,
+    "bookmarks.saveBookmarksInProject": false,
+
+    //删除文件需要确认
+    "explorer.confirmDelete": true,
+
+    //git
+    "gitlens.advanced.messages": {
+      "suppressCommitHasNoPreviousCommitWarning": false,
+      "suppressCommitNotFoundWarning": false,
+      "suppressFileNotUnderSourceControlWarning": false,
+      "suppressGitVersionWarning": false,
+      "suppressLineUncommittedWarning": false,
+      "suppressNoRepositoryWarning": false,
+      "suppressResultsExplorerNotice": false,
+      "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.views.repositories.files.layout": "tree",
+
+    "java.errors.incompleteClasspath.severity": "ignore",
+
+    "[cpp]": {"editor.quickSuggestions": false},
+    "[c]": {"editor.quickSuggestions": false},
+
+    "clock.dateFormat": "isoDateTime",
+    
+    //=======================================================================
+    //terminal 
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "block",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.rightClickBehavior":"selectWord",
+    "terminal.integrated.scrollback":999999,
+
+    //=======================================================================
+    
+    "explorer.openEditors.visible" : 9,
+    "workbench.list.horizontalScrolling": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.useExperimentalGridLayout": true,
+    "workbench.statusBar.feedback.visible": false,
+    "breadcrumbs.enabled": true,
+    "editor.minimap.enabled": false,
+    "workbench.editor.highlightModifiedTabs": true,
+
+    "search.showLineNumbers": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    //=======================================================================
+    
+    //update
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "none",
+    "extensions.ignoreRecommendations": true,
+    "extensions.autoUpdate": false,
+
+    //=======================================================================
+    // 配置语言的文件关联(如: "*.extension": "html")。这些关联的优先级高于已安装语言的默认关联。
+    "files.associations": {
+      "*.txt": "cmake"
+    },
+
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/*.dot": true,
+      "**/*.html": true,
+      "**/*.rhtml": true,
+      "**/*.def": true,
+      "**/*.map": true,
+    },
+    "projectManager.any.maxDepthRecursion": 9,
+    "projectManager.git.maxDepthRecursion": 9,
+    "projectManager.groupList": true,
+    "projectManager.vscode.maxDepthRecursion": 9,
+    "projectManager.cacheProjectsBetweenSessions": false,
+
+    "vsicons.dontShowNewVersionMessage": true,
+    "markdown-pdf.executablePath": "/snap/bin/chromium",
+
+    //=======================================================================
+    //latex workshop
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.latex.autoBuild.run": "never",
+"terminal.integrated.scrollback": 999999,
+"todo-tree.tree.showScanModeButton": false,
+"tabnine.experimentalAutoImports": true,
+"[javascript]": {
+  "editor.defaultFormatter": "vscode.typescript-language-features"
+},
+"editor.rulers": [
+  {
+    "column": 80,
+    "color": "#333333"
+  },
+  {
+    "column": 100,
+    "color": "#444444"
+  },
+  {
+    "column": 120,
+    "color": "#555555"
+  },
+],
+"terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+
+ "telemetry.enableCrashReporter": false,
+"telemetry.enableTelemetry": false,
+"cmake.configureOnOpen": false
+
+}

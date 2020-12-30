@@ -1,0 +1,12 @@
+function listFile {
+   for file in $1/*
+do
+    if [ -d "$file" ]
+    then
+        echo "${PWD}"/"$file"
+        listFile "$file"
+    fi
+done
+}
+
+listFile ${PWD}
